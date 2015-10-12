@@ -6,15 +6,9 @@ This is a sample Clojure project meant to demonstrate the [Proto REPL](https://g
 
 1. Install Atom and install the proto-repl package. See https://github.com/jasongilman/proto-repl#installation
 2. Optional: Install the [Atom Tool Bar package](https://atom.io/packages/tool-bar). The tool-bar package is optional for Proto REPL. Some of the demo steps assume you have it installed.
-3. Clone this repository
-
-    git clone git@github.com:jasongilman/proto-repl-demo.git
-
-4. Open it in the Atom editor.
-
-    atom proto-repl-demo/
-
-5. Open demos.md in the Atom editor.
+3. Clone this repository `git clone git@github.com:jasongilman/proto-repl-demo.git`
+4. Open it in the Atom editor. `atom proto-repl-demo/`
+5. Open `demos.md` from this project in the Atom editor.
 
 
 ## License

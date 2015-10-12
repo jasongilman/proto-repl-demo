@@ -12,7 +12,7 @@ Start the REPL using one of the following methods.
 * Select the menu item "Packages" -> "proto-repl" -> "Start REPL"
 * Bring up the Command Palette (cmd-alt-p) and select "Proto REPL: Toggle"
 
-### What Happened?
+### How Does it Work?
 
 When the REPL starts in Proto REPL it runs the Clojure build tool, Leiningen as a child process. Leiningen starts a Clojure REPL using the current project's classpath. Proto REPL sends code to the REPL which is evaluated. Any standard out from the REPL including the evaluation response is returned and displayed in the REPL.
 
@@ -52,10 +52,10 @@ Select the three `println` statements below (including parentheses) and press `c
 
 All of the code in the project can be loaded and refreshed from the file system by pressing the tool bar button or using the keyboard shortcut `cmd-alt-R`. It works by executing the `reset` function in the `user` namespace. This is defined in this project in `dev/user.clj`. The `reset` function uses [clojure.tools.namespace](https://github.com/clojure/tools.namespace) to load all the code in the project.
 
-1. Reload all code using 'cmd-alt-R'.
+1. Reload all code using `cmd-alt-R`.
 2. Open dev/user.clj
 3. Uncomment the line in the `start` function.
-4. Reload all code using 'cmd-alt-R'. You should see "Starting" is printed in the REPL indicating your code change was loaded.
+4. Reload all code using `cmd-alt-R`. You should see "Starting" is printed in the REPL indicating your code change was loaded.
 
 ## Demo: Run All Tests
 
