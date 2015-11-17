@@ -2,15 +2,17 @@
 
 This is a list of demos for the Proto REPL package for Atom. It assumes you've followed the setup steps in the README first. Follow the steps in this file to see a demonstration of the different capabilities of Proto REPL.
 
-Keyboard shortcuts below refer to the `cmd` key. Use that if you're on Mac OSX or the equivalent for your operating system.
+## A Note About Keyboard Shortcuts
+
+Keyboard shortcuts below refer to using `ctrl-,` then a letter. That means press the `ctrl` key and the comma key at the same time, release them, and then press the subsequent letter. Some keyboard shortcuts also include the shift key.
 
 ## Demo: Start the REPL
 
 Start the REPL using one of the following methods.
 
-* Use the keyboard shortcut - cmd-alt-L
+* Use the keyboard shortcut - `ctrl-, L`
 * Select the menu item "Packages" -> "proto-repl" -> "Start REPL"
-* Bring up the Command Palette (cmd-alt-p) and select "Proto REPL: Toggle"
+* Bring up the Command Palette (ctrl-, p) and select "Proto REPL: Toggle"
 
 ### How Does it Work?
 
@@ -22,7 +24,7 @@ The REPL in Proto REPL is not a typical REPL. It's more of a text editor that is
 
 ## Demo: Send a Block of Clojure Code to the REPL
 
-Put your cursor somewhere within the `println` statement below and press `cmd-alt-b`.
+Put your cursor somewhere within the `println` statement below and press `ctrl-, b`.
 
 ```clojure
 (println "Hello World!")
@@ -40,7 +42,7 @@ Note that if you place your cursor outside of block but within the Markdown code
 
 ## Demo: Send Selected Text to the REPL
 
-Select the three `println` statements below (including parentheses) and press `cmd-alt-s`.
+Select the three `println` statements below (including parentheses) and press `ctrl-, s`.
 
 ```clojure
 (println "hello 1")
@@ -50,42 +52,42 @@ Select the three `println` statements below (including parentheses) and press `c
 
 ## Demo: Refresh all Code in the Project
 
-All of the code in the project can be loaded and refreshed from the file system by pressing the tool bar button or using the keyboard shortcut `cmd-alt-R`. It works by executing the `reset` function in the `user` namespace. This is defined in this project in `dev/user.clj`. The `reset` function uses [clojure.tools.namespace](https://github.com/clojure/tools.namespace) to load all the code in the project.
+All of the code in the project can be loaded and refreshed from the file system by pressing the tool bar button or using the keyboard shortcut `ctrl-, R`. It works by executing the `reset` function in the `user` namespace. This is defined in this project in `dev/user.clj`. The `reset` function uses [clojure.tools.namespace](https://github.com/clojure/tools.namespace) to load all the code in the project.
 
-1. Reload all code using `cmd-alt-R`.
+1. Reload all code using `ctrl-, r`.
 2. Open dev/user.clj
 3. Uncomment the line in the `start` function.
-4. Reload all code using `cmd-alt-R`. You should see "Starting" is printed in the REPL indicating your code change was loaded.
+4. Reload all code using `ctrl-, r`. You should see "Starting" is printed in the REPL indicating your code change was loaded.
 
 ## Demo: Run All Tests
 
-Run all the tests in the project by pressing the tool bar button or hitting the keyboard shortcut `cmd-alt-a`. When you do you should see that one of the tests fails.
+Run all the tests in the project by pressing the tool bar button or hitting the keyboard shortcut `ctrl-, a`. When you do you should see that one of the tests fails.
 
 ## Demo: Run a Single Test File
 
-Open `test/proto_repl_demo/demo_test.clj`. Run the tests in that namespace by pressing `cmd-alt-x`. That runs all of the tests in that namespace.
+Open `test/proto_repl_demo/demo_test.clj`. Run the tests in that namespace by pressing `ctrl-, x`. That runs all of the tests in that namespace.
 
 ## Demo: Run a Single Test
 
-Select the name of a test in the `test/proto_repl_demo/demo_test.clj` file. Press `cmd-alt-t` to run the selected test.
+Select the name of a test in the `test/proto_repl_demo/demo_test.clj` file. Press `ctrl-, t` to run the selected test.
 
 ## Demo: Load a single file.
 
-Sometimes you don't want to reload all the code in a project and you don't want to evaluate each block separately. You can load a single file using the `cmd-alt-shift-f` keybinding.
+Sometimes you don't want to reload all the code in a project and you don't want to evaluate each block separately. You can load a single file using the `ctrl-, f` keybinding.
 
 ## Demo: View Documentation or Code of a Function.
 
-Select the text `vector` in this file and press `cmd-alt-d`. This will print the documentation for that Clojure function. Select the same text and try pressing `cmd-alt-c` to display the source code of that function.
+Select the text `vector` in this file and press `ctrl-, d`. This will print the documentation for that Clojure function. Select the same text and try pressing `ctrl-, c` to display the source code of that function.
 
-You can show documentation or code for a function in a namespace other that clojure.core. Select the text `clojure.string/join` and press `cmd-alt-d`. You must select the namespace (`clojure.string`) so that the join function is found.
+You can show documentation or code for a function in a namespace other that clojure.core. Select the text `clojure.string/join` and press `ctrl-, d`. You must select the namespace (`clojure.string`) so that the join function is found.
 
 ## Demo: View List of Functions in a Namespace.
 
-Select the namespace `clojure.string` and press `cmd-alt-n` to list the vars defined in that namespace. Try pressing `cmd-alt-shift-s` to list the vars with documentation.
+Select the namespace `clojure.string` and press `ctrl-, n` to list the vars defined in that namespace. Try pressing `ctrl-shift-, n` to list the vars with documentation.
 
 ## Demo: Open Namespace or Var Definition
 
-The open command is triggered by selecting something and pressing `cmd-alt-o`. Try selecting each of the following and pressing `cmd-alt-o`
+The open command is triggered by selecting something and pressing `ctrl-, o`. Try selecting each of the following and pressing `ctrl-, o`
 
 * A namespace in this project: `proto-repl-demo.demo`
 * A var in this project: `proto-repl-demo.demo/subtract-numbers`
