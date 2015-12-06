@@ -40,6 +40,10 @@ Note that if you place your cursor outside of block but within the Markdown code
     (println "The ascii decimal value of" letter "is" (int letter))))
 ```
 
+### Executing the Outermost Block
+
+Proto REPL allows execution of the outermost block no matter what the location of your cursor is. Put your cursor anywhere within the block above and press `ctrl-, shift-b`.
+
 ## Demo: Send Selected Text to the REPL
 
 Select the three `println` statements below (including parentheses) and press `ctrl-, s`.
