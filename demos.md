@@ -54,6 +54,16 @@ Select the three `println` statements below (including parentheses) and press `c
 (println "hello 3")
 ```
 
+## Demo: Interrupting a Long Running Command
+
+Proto REPL allows you to interrupt a long running command using `ctrl-shift-c`. Try running the code below which will run forever and then interrupt it.
+
+```clojure
+(while true
+  (Thread/sleep 500)
+  (println "I'm still running"))
+```
+
 ## Demo: Refresh all Code in the Project
 
 All of the code in the project can be loaded and refreshed from the file system by pressing the tool bar button or using the keyboard shortcut `ctrl-, R`. It works by executing the `reset` function in the `user` namespace. This is defined in this project in `dev/user.clj`. The `reset` function uses [clojure.tools.namespace](https://github.com/clojure/tools.namespace) to load all the code in the project.
