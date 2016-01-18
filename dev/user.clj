@@ -3,6 +3,7 @@
 
 (defn start
   [])
+  ; (println "I'm starting"))
 
 (defn reset []
   (tnr/refresh :after 'user/start))

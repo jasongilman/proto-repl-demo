@@ -18,16 +18,12 @@ Start the REPL using one of the following methods.
 
 When the REPL starts in Proto REPL it runs the Clojure build tool, Leiningen as a child process. Leiningen starts a Clojure REPL using the current project's classpath. Proto REPL sends code to the REPL which is evaluated. Any standard out from the REPL including the evaluation response is returned and displayed in the REPL.
 
-### About the REPL
-
-The REPL in Proto REPL is not a typical REPL. It's more of a text editor that is the target for output from REPL execution. You can type anywhere and modify any of the displayed text. Commands are not sent by typing in the REPL and pressing enter. They are sent through keyboard shortcuts. You will typically type Clojure forms in one text editor and send them to the REPL for evaluation. You continue the cycle of code modification and REPL evaluation until it does what you want it to do.
-
 ## Demo: Send a Block of Clojure Code to the REPL
 
-Put your cursor somewhere within the `println` statement below and press `ctrl-, b`.
+Put your cursor somewhere within the statement below and press `ctrl-, b`.
 
 ```clojure
-(println "Hello World!")
+(+ 1 2 3)
 ```
 
 Try placing your cursor in different sections in this more sophisticated example. Depending on which block you execute you may get a compiler exception because certain variable names will not be bound. See [the Proto REPL README](https://github.com/jasongilman/proto-repl#sending-a-block) for a description of a how it finds which block to execute.
@@ -46,7 +42,7 @@ Proto REPL allows execution of the outermost block no matter what the location o
 
 ## Demo: Send Selected Text to the REPL
 
-Select the three `println` statements below (including parentheses) and press `ctrl-, s`.
+Select the three `println` statements below (including parentheses) and press `ctrl-, s`. Note that all the commands are executed but only the result from the last one is returned (`nil`). 
 
 ```clojure
 (println "hello 1")
