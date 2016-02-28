@@ -34,6 +34,7 @@ Note that if you place your cursor outside of block but within the Markdown code
 (let [letters (map char (range (int \a) (inc (int \z))))]
   (doseq [letter letters]
     (println "The ascii decimal value of" letter "is" (int letter))))
+
 ```
 
 ### Executing the Outermost Block
@@ -42,7 +43,7 @@ Proto REPL allows execution of the outermost block no matter what the location o
 
 ## Demo: Send Selected Text to the REPL
 
-Select the three `println` statements below (including parentheses) and press `ctrl-, s`. Note that all the commands are executed but only the result from the last one is returned (`nil`). 
+Select the three `println` statements below (including parentheses) and press `ctrl-, s`. Note that all the commands are executed but only the result from the last one is returned (`nil`).
 
 ```clojure
 (println "hello 1")
@@ -105,3 +106,7 @@ The open command is triggered by selecting something and pressing `ctrl-, o`. Tr
 * A var in a library: `clojure.tools.namespace.repl/refresh`
 
 Pretty much anytime you see a var or namespace in Clojure code you can open it. The open command finds the location of a var either on the local file system or in a referenced library. If the var is located in a library the code from the jar is extracted to `~/.lein/tmp-atom-jars/` and opened there. If the jar was already extracted it uses that first.
+
+## Demo: Autoeval File
+
+Open auteval.clj for an example of Autoeval.
