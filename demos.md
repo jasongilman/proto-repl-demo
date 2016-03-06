@@ -90,7 +90,7 @@ Open `test/proto_repl_demo/demo_test.clj`. Run the tests in that namespace by pr
 
 ## Demo: Run a Single Test
 
-Select the name of a test in the `test/proto_repl_demo/demo_test.clj` file. Press `ctrl-, t` to run the selected test.
+Put your cursor within the name of a test in the `test/proto_repl_demo/demo_test.clj` file. Press `ctrl-, t` to run the  test under the cursor.
 
 ## Demo: Load a single file.
 
@@ -98,17 +98,17 @@ Sometimes you don't want to reload all the code in a project and you don't want 
 
 ## Demo: View Documentation or Code of a Function.
 
-Select the text `vector` in this file and press `ctrl-, d`. This will print the documentation for that Clojure function. Select the same text and try pressing `ctrl-, c` to display the source code of that function.
+Put your cursor within the text `vector` in this file and press `ctrl-, d`. This will print the documentation for that Clojure function. Leave your cursor within the same text and try pressing `ctrl-, c` to display the source code of that function.
 
-You can show documentation or code for a function in a namespace other that clojure.core. Select the text `clojure.string/join` and press `ctrl-, d`. You must select the namespace (`clojure.string`) so that the join function is found.
+You can show documentation or code for a function in a namespace other that clojure.core. Put your cursor within the name `clojure.string/join` and press `ctrl-, d`.
 
 ## Demo: View List of Functions in a Namespace.
 
-Select the namespace `clojure.string` and press `ctrl-, n` to list the vars defined in that namespace. Try pressing `ctrl-shift-, n` to list the vars with documentation.
+Put your cursor within the text of the namespace name `clojure.string` and press `ctrl-, n` to list the vars defined in that namespace. Try pressing `ctrl-shift-, n` to list the vars with documentation.
 
 ## Demo: Open Namespace or Var Definition
 
-The open command is triggered by selecting something and pressing `ctrl-, o`. Try selecting each of the following and pressing `ctrl-, o`
+The open command is triggered by placing your cursor within a var reference and pressing `ctrl-, o`. Try placing your cursor in each of the following and pressing `ctrl-, o`
 
 * A namespace in this project: `proto-repl-demo.demo`
 * A var in this project: `proto-repl-demo.demo/subtract-numbers`
