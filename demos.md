@@ -18,15 +18,13 @@ Start the REPL using one of the following methods.
 
 When the REPL starts in Proto REPL it runs the Clojure build tool, Leiningen as a child process. Leiningen starts a Clojure REPL using the current project's classpath. Proto REPL sends code to the REPL which is evaluated. Any standard out from the REPL including the evaluation response is returned and displayed in the REPL.
 
-[Boot](https://github.com/boot-clj/boot) is supported for running the REPL as well. Proto REPL will use a project.clj file first if it is found.
+## Demo: Start the REPL with Boot
 
-## Demo: Start the REPL with a specific build.boot or project.clj
+[Boot](https://github.com/boot-clj/boot) is supported for running the REPL as well. If both a `project.clj` file (Leiningen style project file) and a `build.boot` file (Boot style build file) then the setting called "Prefer Lein" will determine which is used. proto-repl-demo has both kinds of build files.
 
-You can force Proto REPL to use a specific build.boot or project.clj file by opening it and then using one of the following methods.
+Trying out Boot:
 
-* Use the keyboard shortcut for specific build file - `ctrl-, shift-L`
-* Select the menu item "Packages" -> "proto-repl" -> "Start REPL from open project.clj/build.boot"
-* Right click and select "proto-repl" -> "Start REPL from open project.clj/build.boot"
+Make sure you have boot is installed, uncheck "Prefer Lein" in the Proto REPL settings, then start the REPL. Proto REPL settings can be accessed in Atom by opening "Preferences" from the main menu, then selecting the "Packages" tab. Proto REPL will be one of the packages listed.
 
 ## Demo: Send a Block of Clojure Code to the REPL
 
