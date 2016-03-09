@@ -10,3 +10,5 @@ pom.xml.asc
 .nrepl-history
 .hgignore
 .hg/
+tags
+.nrepl*
