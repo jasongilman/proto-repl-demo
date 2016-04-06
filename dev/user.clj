@@ -5,7 +5,9 @@
 
 
 (defn start
-  [] #_(println "Starting"))
+  []
+  ; (println "I'm starting now")
+  (println "Start completed"))
 
 (defn reset []
   (tnr/refresh :after 'user/start))
