@@ -39,10 +39,8 @@ Try placing your cursor in different sections in this more sophisticated example
 Note that if you place your cursor outside of block but within the Markdown code block the entire block will be executed.
 
 ```clojure
-(let [letters (map char (range (int \a) (inc (int \z))))]
-  (doseq [letter letters]
-    (println "The ascii decimal value of" letter "is" (int letter))))
-
+(let [numbers (range 1 11)]
+  (map #(* 2 %) numbers))
 ```
 
 ### Executing the Outermost Block
@@ -59,7 +57,7 @@ Select the three `println` statements below (including parentheses) and press `c
 (println "hello 3")
 ```
 
-## Demo: Interrupting a Long Running Command
+## Demo: Interrupting a Long Running Command (Clojure Only)
 
 Proto REPL allows you to interrupt a long running command using `ctrl-shift-c`. Try running the code below which will run forever and then interrupt it.
 
