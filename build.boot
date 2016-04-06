@@ -13,5 +13,5 @@
 	[]
 	(set-env!
 		:source-paths #(into % ["dev" "test"])
-		:dependencies #(conj % '[org.clojure/tools.namespace "0.2.11"]))
+		:dependencies #(into % '[[org.clojure/tools.namespace "0.2.11"]]))
 	identity)

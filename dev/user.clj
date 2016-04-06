@@ -5,7 +5,7 @@
 
 
 (defn start
-  [])
+  [] (println "Starting user"))
 
 (defn reset []
   (tnr/refresh :after 'user/start))
