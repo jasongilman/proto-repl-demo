@@ -1,8 +1,8 @@
 (set-env!
   :source-paths #{"src"}
   :dependencies '[[org.clojure/clojure "1.8.0"]
-                  [proto-repl "0.1.2"]
-                  [proto-repl-charts "0.2.0"]])
+                  [proto-repl "0.3.1"]
+                  [proto-repl-charts "0.3.1"]])
 
 (println "welcome to boot")
 
