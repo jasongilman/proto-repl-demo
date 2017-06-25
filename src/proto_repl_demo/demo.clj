@@ -1,4 +1,6 @@
-(ns proto-repl-demo.demo)
+(ns ^{:doc "A demo namespace with metadata in the declaration"
+       :author "Jason Gilman"}
+  proto-repl-demo.demo)
 
 (defn add-numbers
   "Adds two numbers."
