@@ -2,6 +2,7 @@
 
 This is a sample Clojure project meant to demonstrate the [Proto REPL](https://github.com/jasongilman/proto-repl) package for the [Atom](https://atom.io) editor.
 
+
 ## Setup
 
 1. Install Atom and install the proto-repl package. See https://github.com/jasongilman/proto-repl#installation
